@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorado Compliance Check</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="questions.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="app">
+    <div id="landing" class="screen">
+      <h1>Colorado Child Care Compliance Demo</h1>
+      <p>Answer 25 questions to check compliance readiness.</p>
+      <button id="startBtn">Start Compliance Check</button>
+    </div>
+
+    <div id="quiz" class="screen hidden">
+      <div id="progress"></div>
+      <div id="questionCard"></div>
+      <div class="buttons">
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+      </div>
+      <div id="remediation" class="hidden"></div>
+    </div>
+
+    <div id="results" class="screen hidden">
+      <h2>Your Compliance Score</h2>
+      <p id="score"></p>
+      <ul id="issues"></ul>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+</body>
+</html>
